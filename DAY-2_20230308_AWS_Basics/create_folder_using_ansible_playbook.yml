@@ -1,0 +1,14 @@
+---
+- name: Create a folder
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Create the folder
+      file:
+        path: /path/to/folder
+        state: directory
+      register: folder_created
+
+    - name: Display the result
+      debug:
+        var: folder_created
