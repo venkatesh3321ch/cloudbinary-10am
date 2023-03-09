@@ -1,5 +1,6 @@
 #### Session Video:
-    
+    https://s3.amazonaws.com/kesavkummari.aws/10am_20230302_AWSDevOps/DAY-3_20230309_AWS_IAM_Policy/video1158692443.mp4
+
 # Agenda : AWS Basics
     
     Global Infra:
