@@ -54,13 +54,56 @@
     
     - Password  : N422jT6!
 
+#### Login as Root User and create a policy and attach to IAM Users i.e. joel
+
+    - https://aws.amazon.com/console
+
+     User Name : info@cloudbinary.io
+     Password  : ***********
+
+    - Create a Policy: 
+        - Grant access to AWS Region i.e. NV(us-east-1) 
+        - AWS Services : EC2 Full Access
+
+
+    - Create Policy By going to AWS IAM Console:
+
+        - Policy Name : cb-onlynv-ec2-full-access	
+        - Who Created : Customer managed
+
+    ```
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:RequestedRegion": "us-east-1"
+                }
+            }
+            }
+        ]
+    }
+
+    ```
+
+    - Attach a Policy To User: joel.k@cloudbinary.io
+
+    - Remove Prvious Policy from a User: AdministratorAccess	
+
+
 #### Create a User & Assign Permmissions to EC2 in Only North Virginia Region:
 
     - User Name : joel.k@cloudbinary.io
     - Password  : **********
 
-    - Attach Policies : 
-    - Who Manages     : 
+    - Attach Policies : cb-onlynv-ec2-full-access
+    - Who Manages     : Customer managed
 
 #### Launch an Operating System in AWS using EC2:
 
