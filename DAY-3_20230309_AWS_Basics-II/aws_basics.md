@@ -41,10 +41,18 @@
 #### Create a User & Assign Permmissions i.e. Attach Policies (AdministratorAccess)	:
 
     - User Name : joel.k@cloudbinary.io
-    - Password  : **********
+    - Password  : N422jT6!
 
     - Attach Policies : AdministratorAccess	
     - Who Manages     : AWS managed
+
+#### Login to AWS as an IAM User:
+
+    URL : https://iam-cloudbinary.signin.aws.amazon.com/console
+
+    - User Name : joel.k@cloudbinary.io
+    
+    - Password  : N422jT6!
 
 #### Create a User & Assign Permmissions to EC2 in Only North Virginia Region:
 
