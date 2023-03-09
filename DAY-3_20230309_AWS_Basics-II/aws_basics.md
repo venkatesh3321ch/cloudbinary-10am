@@ -97,7 +97,7 @@
     - Remove Prvious Policy from a User: AdministratorAccess	
 
 
-#### Create a User & Assign Permmissions to EC2 in Only North Virginia Region:
+#### Validate the new permissions by loging to AWS AS AN IAM User: joel
 
     - User Name : joel.k@cloudbinary.io
     - Password  : **********
@@ -105,6 +105,9 @@
     - Attach Policies : cb-onlynv-ec2-full-access
     - Who Manages     : Customer managed
 
+    Validate Condition :
+        - Try to Navigate to AWS EC2 and Launch an EC2 instance in Mumbai region
+        
 #### Launch an Operating System in AWS using EC2:
 
     - Compute :
