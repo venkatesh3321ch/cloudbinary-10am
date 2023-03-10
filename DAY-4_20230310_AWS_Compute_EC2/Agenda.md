@@ -1,3 +1,6 @@
+#### Session Video:
+    https://s3.amazonaws.com/kesavkummari.aws/10am_20230302_AWSDevOps/DAY-4_20230310_AWS_EC2/video1814629882.mp4
+
 # Agenda : 
     - AWS Services :
         - Compute :
